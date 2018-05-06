@@ -1,4 +1,4 @@
-// 将计数简化为1-11
+// 规则类，将计数简化为1-11
 class Rule {
     constructor() {
         // flag:是否在游戏中，
@@ -71,17 +71,18 @@ class Rule {
                     this._score += Math.pow(2, tempArr[k].num);
                     tempArr[k + 1].num = 0;
                 }
+                if (tempArr[k].num !== 0) resultArr.push(tempArr[k]);
                 isMoving = true;
             }
 
             for (let m = 0; m < 4; m++) {
-                if (tempArr[m] && tempArr[m].num !== 0) {
+                if (resultArr[m] && resultArr[m].num !== 0) {
                     const key = this._getKey(dir, i, m);
-                    this._setNum(key, tempArr[m].num);
-                    if (tempArr[m].num === 11) gameEndFlag = true;
+                    this._setNum(key, resultArr[m].num);
+                    if (resultArr[m].num === 11) gameEndFlag = true;
 
                     // 记录新位置
-                    tempArr[m].newKey = key
+                    resultArr[m].newKey = key
                 } else {
                     this._setNum(this._getKey(dir, i, m), 0);
                 }

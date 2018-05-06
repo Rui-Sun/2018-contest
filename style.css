@@ -24,85 +24,12 @@
     width: 100%;
     text-align: center;
     line-height: 110px;
-    font-size: 50px;
+    font-size: 45px;
 }
 
-#con-1 {
-    left: 0;
-    top: 0;
-}
-
-#con-2 {
-    left: 125px;
-    top: 0;
-}
-
-#con-3 {
-    left: 250px;
-    top: 0;
-}
-
-#con-4 {
-    left: 375px;
-    top: 0;
-}
-
-#con-5 {
-    left: 0;
-    top: 125px;
-}
-
-#con-6 {
-    left: 125px;
-    top: 125px;
-}
-
-#con-7 {
-    left: 250px;
-    top: 125px;
-}
-
-#con-8 {
-    left: 375px;
-    top: 125px;
-}
-
-#con-9 {
-    left: 0;
-    top: 250px;
-}
-
-#con-10 {
-    left: 125px;
-    top: 250px;
-}
-
-#con-11 {
-    left: 250px;
-    top: 250px;
-}
-
-#con-12 {
-    left: 375px;
-    top: 250px;
-}
-
-#con-13 {
-    left: 0;
-    top: 375px;
-}
-
-#con-14 {
-    left: 125px;
-    top: 375px;
-}
-
-#con-15 {
-    left: 250px;
-    top: 375px;
-}
-
-#con-16 {
-    left: 375px;
-    top: 375px;
+.score-bord {
+    width: 515px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
 }
