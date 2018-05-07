@@ -58,8 +58,10 @@ function move(dir) {
         dom.style.top = newPosi[0] * 125 + 'px';
         dom.style.left = newPosi[1] * 125 + 'px';
     });
+    rule.setIsAnimating(true);
     setTimeout(() => {
         flash();
+        rule.setIsAnimating(false);
         if (result.isEnd) {
             alert('游戏结束！');
         }
